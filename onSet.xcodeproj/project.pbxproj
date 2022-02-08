@@ -15,6 +15,7 @@
 		7D65226F279DB3E6003E03EE /* onSet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D65226D279DB3E6003E03EE /* onSet.xcdatamodeld */; };
 		7D7E09F527B18AED00B7E9F6 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F427B18AED00B7E9F6 /* ProjectsView.swift */; };
 		7D7E09F727B18D6F00B7E9F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F627B18D6F00B7E9F6 /* Colors.swift */; };
+		7D7E09FA27B1A40A00B7E9F6 /* ProductionStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */; };
 		7DABBB6C27A0C1B5000000B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABBB6B27A0C1B5000000B6 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		7D652277279DB954003E03EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7D7E09F427B18AED00B7E9F6 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		7D7E09F627B18D6F00B7E9F6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionStickerView.swift; sourceTree = "<group>"; };
 		7DABBB6B27A0C1B5000000B6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				7D7E09F427B18AED00B7E9F6 /* ProjectsView.swift */,
+				7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				7D652265279DB3E5003E03EE /* ContentView.swift in Sources */,
 				7D7E09F727B18D6F00B7E9F6 /* Colors.swift in Sources */,
 				7D652263279DB3E5003E03EE /* onSetApp.swift in Sources */,
+				7D7E09FA27B1A40A00B7E9F6 /* ProductionStickerView.swift in Sources */,
 				7DABBB6C27A0C1B5000000B6 /* MainView.swift in Sources */,
 				7D65226F279DB3E6003E03EE /* onSet.xcdatamodeld in Sources */,
 			);

@@ -10,17 +10,24 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         VStack {
+//            HStack {
+//                Spacer()
+//                Button {
+//                    // action
+//                } label: {
+//                    Text("Login/Register")
+//                        .font(.footnote)
+//            }
+//            }.padding(.horizontal)
+//            Spacer()
             HStack {
+                ProjectsView()
+                    .frame(width: 559, height: 500, alignment: .center)
                 Spacer()
-                Button {
-                    // action
-                } label: {
-                    Text("Login/Register")
-                        .font(.footnote)
             }
-            }.padding(.horizontal)
             Spacer()
         } //: VSTACK login
+        
        
 
         

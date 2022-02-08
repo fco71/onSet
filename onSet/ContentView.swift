@@ -11,7 +11,54 @@ import CoreData
 struct ContentView: View {
    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        NavigationView {
+            ZStack {
+                HStack {
+                    
+                    VStack {
+                        List {
+                            ForEach(0 ..< 15) { item in
+                                HStack {
+                                    Spacer()
+                                    ProductionStickerView()
+                                    Spacer()
+                                }
+                            }
+                        } //: LIST
+                        .listStyle(InsetListStyle())
+                        
+                    .frame(maxWidth: 530, maxHeight: 700)
+                        Spacer()
+                    }
+                    Spacer()
+                } //: HSTACK
+            }  //: ZSTACK
+            .onAppear() {
+                UITableView.appearance().backgroundColor = UIColor.clear
+            }
+            
+            .toolbar {
+            #if os(iOS)
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        // action
+                    } label: {
+                        Text("Login/Register")
+                            .font(.footnote)
+                }
+                }
+            #endif
+            } //: TOOLBAR
+//            .background(
+//                BackgroundImageView()
+//            )
+//            .background(
+//                backgroundGradient.ignoresSafeArea(.all)
+//            )
+        } //: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
+
     }
 }
 
@@ -19,6 +66,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-.previewInterfaceOrientation(.landscapeLeft)
+.previewInterfaceOrientation(.landscapeRight)
     }
 }
