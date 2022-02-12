@@ -1,15 +1,13 @@
 //
-//  ContentView.swift
+//  OldContentView.swift
 //  onSet
 //
-//  Created by Francisco Valdez on 23/1/22.
+//  Created by Francisco Valdez on 12/2/22.
 //
 
 import SwiftUI
-import CoreData
 
-struct ContentView: View {
-   
+struct OldContentView: View {
     var body: some View {
         
         NavigationView {
@@ -62,10 +60,9 @@ struct ContentView: View {
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct OldContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-.previewInterfaceOrientation(.landscapeRight)
+        OldContentView()
+            .previewInterfaceOrientation(.landscapeRight)
     }
 }

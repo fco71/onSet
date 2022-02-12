@@ -13,7 +13,7 @@ struct onSetApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            Home()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
