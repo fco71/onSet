@@ -21,7 +21,7 @@ struct TabButton: View {
             withAnimation(.spring()){selected = title}
         }, label: {
             
-            HStack(spacing: 10){
+            HStack(spacing: 13) {
                 
                 Image(systemName: image)
                     .font(.system(size: 24))

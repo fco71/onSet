@@ -25,9 +25,10 @@ struct SideView: View {
 //                    .frame(width: 30, height: 30)
                 
                 Text("Who's On Set")
-                    .font(.custom("Billabong", size: 30))
+                    .font(.system(size: 30, weight: .semibold, design: .rounded))
+                        .foregroundColor(.pink)
                 
-                Spacer()
+//                Spacer()
             }
             .padding()
             .padding(.top,20)
@@ -41,7 +42,7 @@ struct SideView: View {
                 .background(
                 
                     Circle()
-                        .stroke(gradient,lineWidth: 2)
+                        .stroke(Color.pink,lineWidth: 3.5)
                 )
                 .clipShape(Circle())
             
@@ -52,75 +53,25 @@ struct SideView: View {
             Text("username")
                 .foregroundColor(.gray)
             
-            // Followers....
-            
-//            HStack{
-//
-//                VStack(spacing: 8){
-//
-//                    Text("1.2K")
-//                        .foregroundColor(.white)
-//
-//                    Text("Posts")
-//                        .fontWeight(.semibold)
-//                        .foregroundColor(.gray)
-//                }
-//                .frame(maxWidth: .infinity)
-//
-//                Divider()
-//
-//                VStack(spacing: 8){
-//
-//                    Text("1.8M")
-//                        .foregroundColor(.white)
-//
-//                    Text("Followers")
-//                        .fontWeight(.semibold)
-//                        .foregroundColor(.gray)
-//                }
-//                .frame(maxWidth: .infinity)
-//
-//                Divider()
-//
-//                VStack(spacing: 8){
-//
-//                    Text("22")
-//                        .foregroundColor(.white)
-//
-//                    Text("Following")
-//                        .fontWeight(.semibold)
-//                        .foregroundColor(.gray)
-//                }
-//                .frame(maxWidth: .infinity)
-//            }
-//            .frame(height: 50)
-            
-            // Tab Buttons....
             
             Group {
                 
-                TabButton(image: "rectangle.3.offgrid", title: "Explore", selected: $selected, animation: animation)
+                TabButton(image: "film", title: "Productions", selected: $selected, animation: animation)
                     .padding(.top)
                 
-                TabButton(image: "magnifyingglass", title: "Feed", selected: $selected, animation: animation)
-                
-                TabButton(image: "bell", title: "Notifications", selected: $selected, animation: animation)
-                
-                TabButton(image: "paperplane", title: "Direct", selected: $selected, animation: animation)
-                
-                TabButton(image: "play.tv", title: "IGTV", selected: $selected, animation: animation)
+                TabButton(image: "person.2", title: "Crew", selected: $selected, animation: animation)
                 
                 TabButton(image: "gear", title: "Settings", selected: $selected, animation: animation)
             }
             
             Spacer()
             
-            Divider()
+//            Divider()
                 .padding(.horizontal,20)
             
             Spacer()
             
-            TabButton(image: "arrow.down.forward.square", title: "Logout", selected: .constant(""), animation: animation)
+            TabButton(image: "arrow.up.forward.square", title: "Login", selected: .constant(""), animation: animation)
                 .padding(.bottom,20)
         }
         .frame(maxWidth: (screen.width / 1.7) / 3.5, maxHeight: .infinity)

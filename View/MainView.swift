@@ -43,7 +43,7 @@ struct MainView: View {
                 .padding()
                 .padding(.top,20)
                 
-                Text("Stories")
+                Text("Favorites")
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
@@ -66,7 +66,7 @@ struct MainView: View {
                         })
                         .buttonStyle(PlainButtonStyle())
                         
-                        ForEach(1...6,id: \.self){index in
+                        ForEach(1...21,id: \.self){index in
                             
                             Image("p\(index)")
                                 .resizable()
@@ -74,7 +74,7 @@ struct MainView: View {
                                 .frame(width: 55, height: 55)
                                 .clipShape(Circle())
                                 .padding(5)
-                                .background(Circle().stroke(gradient,lineWidth: 2))
+                                .background(Circle().stroke(Color.pink,lineWidth: 2))
                                 .clipShape(Circle())
                         }
                         
@@ -83,7 +83,7 @@ struct MainView: View {
                 
                 HStack(alignment: .top){
                     
-                    Text("Feed")
+                    Text("Recent")
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
