@@ -11,7 +11,7 @@ struct SideView: View {
     
     var screen = NSScreen.main!.visibleFrame
     
-    @State var selected = "Explore"
+    @State var selected = "Productions"
     @Namespace var animation
     
     var body: some View {
@@ -36,13 +36,13 @@ struct SideView: View {
             Image("pic")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 65, height: 65)
+                .frame(width: 130, height: 130)
                 .clipShape(Circle())
                 .padding(5)
                 .background(
                 
                     Circle()
-                        .stroke(Color.pink,lineWidth: 3.5)
+                        .stroke(Color.pink,lineWidth: 5)
                 )
                 .clipShape(Circle())
             

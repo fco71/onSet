@@ -28,16 +28,16 @@ struct MainView: View {
                         .background(Color.white.opacity(0.25))
                         .cornerRadius(10)
                     
-                    Button(action: {}, label: {
-                        
-                        Label(
-                            title: { Text("Add Photos") },
-                            icon: { Image(systemName: "plus.square") })
-                            .foregroundColor(.white)
-                            .padding(10)
-                            .background(gradient)
-                            .cornerRadius(10)
-                    })
+//                    Button(action: {}, label: {
+//                        
+//                        Label(
+//                            title: { Text("Add Photos") },
+//                            icon: { Image(systemName: "plus.square") })
+//                            .foregroundColor(.white)
+//                            .padding(10)
+//                            .background(gradient)
+//                            .cornerRadius(10)
+//                    })
                     .buttonStyle(PlainButtonStyle())
                 }
                 .padding()
@@ -55,27 +55,32 @@ struct MainView: View {
                     
                     HStack(spacing: 15){
                         
-                        Button(action: {}, label: {
-                            
-                            Image(systemName: "plus")
-                                .font(.title)
-                                .foregroundColor(.white)
-                                .frame(width: 65, height: 65)
-                                .background(Color.orange.opacity(0.15))
-                                .clipShape(Circle())
-                        })
-                        .buttonStyle(PlainButtonStyle())
+//                        Button(action: {}, label: {
+//
+//                            Image(systemName: "plus")
+//                                .font(.title)
+//                                .foregroundColor(.white)
+//                                .frame(width: 65, height: 65)
+//                                .background(Color.orange.opacity(0.15))
+//                                .clipShape(Circle())
+//                        })
+//                        .buttonStyle(PlainButtonStyle())
                         
                         ForEach(1...21,id: \.self){index in
                             
-                            Image("p\(index)")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 55, height: 55)
+                            VStack {
+                                Image("p\(index)")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 55, height: 55)
+                                    .clipShape(Circle())
+                                    .padding(5)
+                                    .background(Circle().stroke(Color.pink,lineWidth: 3.5))
                                 .clipShape(Circle())
-                                .padding(5)
-                                .background(Circle().stroke(Color.pink,lineWidth: 2))
-                                .clipShape(Circle())
+                                
+                                Text("Full Name")
+                                    .font(.system(size: 10, weight: .semibold, design: .rounded))
+                            }
                         }
                         
                     }.padding()

@@ -30,10 +30,10 @@ struct PostView: View {
                         .frame(width: 30, height: 30)
                         .clipShape(Circle())
                         .padding(5)
-                        .background(Circle().stroke(gradient,lineWidth: 2))
+                        .background(Circle().stroke(Color.pink,lineWidth: 3.5))
                         .clipShape(Circle())
                     
-                    Text("iJustine")
+                    Text("username")
                         .foregroundColor(.white)
                     
                     Spacer(minLength: 0)

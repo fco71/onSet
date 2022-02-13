@@ -8,7 +8,7 @@
 import SwiftUI
 
 // Gradient....
-let gradient = LinearGradient(gradient: .init(colors: [Color("gradient1"),Color("gradient2")]), startPoint: .leading, endPoint: .trailing)
+//let gradient = LinearGradient(gradient: .init(colors: [Color("gradient1"),Color("gradient2")]), startPoint: .leading, endPoint: .trailing)
 
 struct Home: View {
     
@@ -23,7 +23,7 @@ struct Home: View {
             MainView()
         }
         .ignoresSafeArea(.all, edges: .all)
-        .frame(width: screen.width / 1, height: screen.height )
+        .frame(width: screen.width / 1.1, height: screen.height / 1.1) // divided by 1.1 in the meantime
     }
 }
 

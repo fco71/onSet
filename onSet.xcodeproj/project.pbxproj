@@ -37,6 +37,8 @@
 		7D7E09F727B18D6F00B7E9F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F627B18D6F00B7E9F6 /* Colors.swift */; };
 		7D7E09FA27B1A40A00B7E9F6 /* ProductionStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */; };
 		7DABBB6C27A0C1B5000000B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABBB6B27A0C1B5000000B6 /* MainView.swift */; };
+		7DBD003527B9AE880029BDDD /* CrewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD003427B9AE880029BDDD /* CrewCardView.swift */; };
+		7DBD003627B9AE880029BDDD /* CrewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD003427B9AE880029BDDD /* CrewCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,11 +63,11 @@
 		7D652269279DB3E6003E03EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D65226B279DB3E6003E03EE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7D65226E279DB3E6003E03EE /* onSet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = onSet.xcdatamodel; sourceTree = "<group>"; };
-		7D652277279DB954003E03EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7D7E09F427B18AED00B7E9F6 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		7D7E09F627B18D6F00B7E9F6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionStickerView.swift; sourceTree = "<group>"; };
 		7DABBB6B27A0C1B5000000B6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7DBD003427B9AE880029BDDD /* CrewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		7D652256279DB3E5003E03EE = {
 			isa = PBXGroup;
 			children = (
+				7DBD003327B9AD820029BDDD /* Form */,
 				7D228DCB27B8175900A08CB6 /* View */,
 				7D652261279DB3E5003E03EE /* onSet */,
 				7D228D7A27B813CD00A08CB6 /* onSetDesktop */,
@@ -143,7 +146,6 @@
 		7D652261279DB3E5003E03EE /* onSet */ = {
 			isa = PBXGroup;
 			children = (
-				7D652277279DB954003E03EE /* Info.plist */,
 				7D652262279DB3E5003E03EE /* onSetApp.swift */,
 				7D228D7327B8118F00A08CB6 /* OldContentView.swift */,
 				7DABBB6B27A0C1B5000000B6 /* MainView.swift */,
@@ -188,6 +190,14 @@
 				7D7E09F627B18D6F00B7E9F6 /* Colors.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7DBD003327B9AD820029BDDD /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				7DBD003427B9AE880029BDDD /* CrewCardView.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +308,7 @@
 				7D228DDA27B8177F00A08CB6 /* TabButton.swift in Sources */,
 				7D228D8527B813D000A08CB6 /* Persistence.swift in Sources */,
 				7D228D7E27B813CD00A08CB6 /* ContentView.swift in Sources */,
+				7DBD003627B9AE880029BDDD /* CrewCardView.swift in Sources */,
 				7D228DD427B8177F00A08CB6 /* BlurWindow.swift in Sources */,
 				7D228DC727B8151600A08CB6 /* Home.swift in Sources */,
 				7D228DD227B8177F00A08CB6 /* PostView.swift in Sources */,
@@ -310,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7E09F527B18AED00B7E9F6 /* ProjectsView.swift in Sources */,
+				7DBD003527B9AE880029BDDD /* CrewCardView.swift in Sources */,
 				7D228DD727B8177F00A08CB6 /* MainView.swift in Sources */,
 				7D65226C279DB3E6003E03EE /* Persistence.swift in Sources */,
 				7D228DD327B8177F00A08CB6 /* BlurWindow.swift in Sources */,
