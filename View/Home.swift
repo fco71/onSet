@@ -18,7 +18,7 @@ struct Home: View {
         
         HStack(spacing: 0) {
             
-            SideView()
+//            SideView()
             
             MainView()
         }

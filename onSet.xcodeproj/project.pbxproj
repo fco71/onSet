@@ -26,7 +26,6 @@
 		7D228DD727B8177F00A08CB6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228DCF27B8177F00A08CB6 /* MainView.swift */; };
 		7D228DD827B8177F00A08CB6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228DCF27B8177F00A08CB6 /* MainView.swift */; };
 		7D228DD927B8177F00A08CB6 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228DD027B8177F00A08CB6 /* TabButton.swift */; };
-		7D228DDA27B8177F00A08CB6 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228DD027B8177F00A08CB6 /* TabButton.swift */; };
 		7D228DDB27B817FF00A08CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D228D7F27B813D000A08CB6 /* Assets.xcassets */; };
 		7D228DDC27B81B6B00A08CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D652266279DB3E6003E03EE /* Assets.xcassets */; };
 		7D652267279DB3E6003E03EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D652266279DB3E6003E03EE /* Assets.xcassets */; };
@@ -36,6 +35,8 @@
 		7D7E09F527B18AED00B7E9F6 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F427B18AED00B7E9F6 /* ProjectsView.swift */; };
 		7D7E09F727B18D6F00B7E9F6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F627B18D6F00B7E9F6 /* Colors.swift */; };
 		7D7E09FA27B1A40A00B7E9F6 /* ProductionStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */; };
+		7D86CE8727BA9EE9003A7468 /* ProducerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D86CE8627BA9EE9003A7468 /* ProducerView.swift */; };
+		7D86CE8827BA9EE9003A7468 /* ProducerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D86CE8627BA9EE9003A7468 /* ProducerView.swift */; };
 		7DABBB6C27A0C1B5000000B6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DABBB6B27A0C1B5000000B6 /* MainView.swift */; };
 		7DBD003527B9AE880029BDDD /* CrewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD003427B9AE880029BDDD /* CrewCardView.swift */; };
 		7DBD003627B9AE880029BDDD /* CrewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBD003427B9AE880029BDDD /* CrewCardView.swift */; };
@@ -66,6 +67,7 @@
 		7D7E09F427B18AED00B7E9F6 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		7D7E09F627B18D6F00B7E9F6 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7D7E09F927B1A40A00B7E9F6 /* ProductionStickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionStickerView.swift; sourceTree = "<group>"; };
+		7D86CE8627BA9EE9003A7468 /* ProducerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerView.swift; sourceTree = "<group>"; };
 		7DABBB6B27A0C1B5000000B6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7DBD003427B9AE880029BDDD /* CrewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,7 +120,7 @@
 				7D228DCF27B8177F00A08CB6 /* MainView.swift */,
 				7D228DCC27B8177E00A08CB6 /* PostView.swift */,
 				7D228DCE27B8177F00A08CB6 /* SideView.swift */,
-				7D228DD027B8177F00A08CB6 /* TabButton.swift */,
+				7D86CE8627BA9EE9003A7468 /* ProducerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +189,7 @@
 		7D7E09F827B18D7700B7E9F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7D228DD027B8177F00A08CB6 /* TabButton.swift */,
 				7D7E09F627B18D6F00B7E9F6 /* Colors.swift */,
 			);
 			path = Extensions;
@@ -305,11 +308,11 @@
 				7D228D8827B813D000A08CB6 /* onSetDesktop.xcdatamodeld in Sources */,
 				7D228DD827B8177F00A08CB6 /* MainView.swift in Sources */,
 				7D228DD627B8177F00A08CB6 /* SideView.swift in Sources */,
-				7D228DDA27B8177F00A08CB6 /* TabButton.swift in Sources */,
 				7D228D8527B813D000A08CB6 /* Persistence.swift in Sources */,
 				7D228D7E27B813CD00A08CB6 /* ContentView.swift in Sources */,
 				7DBD003627B9AE880029BDDD /* CrewCardView.swift in Sources */,
 				7D228DD427B8177F00A08CB6 /* BlurWindow.swift in Sources */,
+				7D86CE8827BA9EE9003A7468 /* ProducerView.swift in Sources */,
 				7D228DC727B8151600A08CB6 /* Home.swift in Sources */,
 				7D228DD227B8177F00A08CB6 /* PostView.swift in Sources */,
 				7D228D7C27B813CD00A08CB6 /* onSetDesktopApp.swift in Sources */,
@@ -332,6 +335,7 @@
 				7D7E09FA27B1A40A00B7E9F6 /* ProductionStickerView.swift in Sources */,
 				7DABBB6C27A0C1B5000000B6 /* MainView.swift in Sources */,
 				7D228DD527B8177F00A08CB6 /* SideView.swift in Sources */,
+				7D86CE8727BA9EE9003A7468 /* ProducerView.swift in Sources */,
 				7D228DD127B8177F00A08CB6 /* PostView.swift in Sources */,
 				7D65226F279DB3E6003E03EE /* onSet.xcdatamodeld in Sources */,
 				7D228DD927B8177F00A08CB6 /* TabButton.swift in Sources */,

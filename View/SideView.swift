@@ -56,12 +56,12 @@ struct SideView: View {
             
             Group {
                 
-                TabButton(image: "film", title: "Productions", selected: $selected, animation: animation)
-                    .padding(.top)
-                
-                TabButton(image: "person.2", title: "Crew", selected: $selected, animation: animation)
-                
-                TabButton(image: "gear", title: "Settings", selected: $selected, animation: animation)
+//                TabButton(image: "film", title: "Productions", selected: $selected, animation: animation)
+//                    .padding(.top)
+//
+//                TabButton(image: "person.2", title: "Crew", selected: $selected, animation: animation)
+//
+//                TabButton(image: "gear", title: "Settings", selected: $selected, animation: animation)
             }
             
             Spacer()
@@ -71,8 +71,8 @@ struct SideView: View {
             
             Spacer()
             
-            TabButton(image: "arrow.up.forward.square", title: "Login", selected: .constant(""), animation: animation)
-                .padding(.bottom,20)
+//            TabButton(image: "arrow.up.forward.square", title: "Login", selected: .constant(""), animation: animation)
+//                .padding(.bottom,20)
         }
         .frame(maxWidth: (screen.width / 1.7) / 3.5, maxHeight: .infinity)
         .background(BlurWindow())
