@@ -24,35 +24,35 @@ struct PostView: View {
                     
                     // Use Your Own Post Model Data Here....
                     
-                    Image("pic")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 30, height: 30)
-                        .clipShape(Circle())
-                        .padding(5)
-                        .background(Circle().stroke(Color.pink,lineWidth: 3.5))
-                        .clipShape(Circle())
+//                    Image("pic")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fill)
+//                        .frame(width: 30, height: 30)
+//                        .clipShape(Circle())
+//                        .padding(5)
+//                        .background(Circle().stroke(Color.pink,lineWidth: 3.5))
+//                        .clipShape(Circle())
                     
-                    Text("username")
+                    Text("Project Title")
                         .foregroundColor(.white)
                     
                     Spacer(minLength: 0)
                     
                     Button(action: {}, label: {
                         
-                        Label(
-                            title: { Text("1.2K") },
-                            icon: { Image(systemName: "suit.heart") })
+                        Label (
+                            title: { Text("Current") },
+                            icon: { Image(systemName: "film") })
                     })
                     .buttonStyle(PlainButtonStyle())
                     
-                    Button(action: {}, label: {
-                        
-                        Label(
-                            title: { Text("556") },
-                            icon: { Image(systemName: "message") })
-                    })
-                    .buttonStyle(PlainButtonStyle())
+//                    Button(action: {}, label: {
+//
+//                        Label(
+//                            title: { Text("556") },
+//                            icon: { Image(systemName: "message") })
+//                    })
+//                    .buttonStyle(PlainButtonStyle())
                 }
                 .padding(.horizontal)
                 .foregroundColor(.gray)

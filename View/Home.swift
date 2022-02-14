@@ -16,7 +16,7 @@ struct Home: View {
     
     var body: some View {
         
-        HStack(spacing: 0){
+        HStack(spacing: 0) {
             
             SideView()
             
