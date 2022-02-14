@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D107E5327BAEBAF00677904 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228DD027B8177F00A08CB6 /* TabButton.swift */; };
 		7D228D7427B8118F00A08CB6 /* OldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228D7327B8118F00A08CB6 /* OldContentView.swift */; };
 		7D228D7C27B813CD00A08CB6 /* onSetDesktopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228D7B27B813CD00A08CB6 /* onSetDesktopApp.swift */; };
 		7D228D7E27B813CD00A08CB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D228D7D27B813CD00A08CB6 /* ContentView.swift */; };
@@ -121,6 +122,7 @@
 				7D228DCC27B8177E00A08CB6 /* PostView.swift */,
 				7D228DCE27B8177F00A08CB6 /* SideView.swift */,
 				7D86CE8627BA9EE9003A7468 /* ProducerView.swift */,
+				7D228DD027B8177F00A08CB6 /* TabButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -189,7 +191,6 @@
 		7D7E09F827B18D7700B7E9F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7D228DD027B8177F00A08CB6 /* TabButton.swift */,
 				7D7E09F627B18D6F00B7E9F6 /* Colors.swift */,
 			);
 			path = Extensions;
@@ -314,6 +315,7 @@
 				7D228DD427B8177F00A08CB6 /* BlurWindow.swift in Sources */,
 				7D86CE8827BA9EE9003A7468 /* ProducerView.swift in Sources */,
 				7D228DC727B8151600A08CB6 /* Home.swift in Sources */,
+				7D107E5327BAEBAF00677904 /* TabButton.swift in Sources */,
 				7D228DD227B8177F00A08CB6 /* PostView.swift in Sources */,
 				7D228D7C27B813CD00A08CB6 /* onSetDesktopApp.swift in Sources */,
 			);

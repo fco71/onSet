@@ -56,8 +56,8 @@ struct SideView: View {
             
             Group {
                 
-//                TabButton(image: "film", title: "Productions", selected: $selected, animation: animation)
-//                    .padding(.top)
+                TabButton(image: "film", title: "Productions", selected: $selected, animation: animation)
+                    .padding(.top)
 //
 //                TabButton(image: "person.2", title: "Crew", selected: $selected, animation: animation)
 //

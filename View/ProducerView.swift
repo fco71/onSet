@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct ProducerView: View {
-//    @Binding var selected = Bool: false
-//    
-//    var animation: Namespace.ID
-    @State private var fgColor: Color = .gray
-    
-    
+
     var body: some View {
         // MARK: - PROPERTIES
          
@@ -47,26 +42,60 @@ struct ProducerView: View {
                 } //: VSTACK HEADER
                 Spacer()
                 
-                Group {
+                VStack {
+                    
+                    NavigationLink(destination: CrewCardView()) {
+            
+                            HStack {
+                                Image(systemName: "film")
+                                    .font(.system(size: 17))
+                                    .frame(width: 25, alignment: .center)
+                                Spacer()
+                                Text("Production")
+                                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                            } .frame(width: 110, height: 30)
+                        
+                        
+                    } //: NAVIGATION LINK
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    NavigationLink(destination: CrewCardView()) {
+                      
+                            HStack {
+                                Image(systemName: "person.2")
+                                    .font(.system(size: 17))
+                                    .frame(width: 25, alignment: .center)
+                                Spacer()
+                                Text("Crew")
+                                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                            } .frame(width: 110, height: 30)
+                        
+                    } //: NAVIGATION LINK
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    
                     NavigationLink(destination: CrewCardView()) {
                         
-                        HStack {
-                            
-                            Image(systemName: "film")
-                                .font(.system(size: 17))
-                            //                            .foregroundColor(isSelected ?? Color.pink : Color.gray)
-                                .frame(width: 30)
-                            
-                            Text("Placeholder")
-                                .fontWeight(.semibold)
-                                .foregroundColor(.gray)
-                            
-                            Spacer(minLength: 0)
-                        }
+                       
+                            HStack {
+                                Image(systemName: "gear")
+                                    .font(.system(size: 17))
+                                    .frame(width: 25, alignment: .center)
+                                Spacer()
+                                Text("Settings")
+                                    .font(.system(size: 12, weight: .semibold, design: .rounded))
+                            } .frame(width: 110, height: 30)
                         
-                    }
+                        
+                    } //: NAVIGATION LINK
+                    .buttonStyle(PlainButtonStyle())
                     
-                }
+                } //: VSTACK
+                .padding(.vertical)
+                
+               Text("Login")
+                    .font(.footnote)
+
                 
             }
         }

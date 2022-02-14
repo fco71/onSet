@@ -30,7 +30,7 @@ struct TabButton: View {
                 
                 Text(title)
                     .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(selected == title ? Color.pink : Color.gray)
                 
                 Spacer(minLength: 0)
                 
