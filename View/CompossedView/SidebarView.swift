@@ -1,14 +1,13 @@
 //
-//  ProducerView.swift
+//  SidebarView.swift
 //  onSet
 //
-//  Created by Francisco Valdez on 14/2/22.
+//  Created by Francisco Valdez on 15/2/22.
 //
 
 import SwiftUI
 
-struct ProducerView: View {
-
+struct SidebarView: View {
     var body: some View {
         // MARK: - PROPERTIES
          
@@ -103,8 +102,8 @@ struct ProducerView: View {
     }
 }
 
-struct ProducerView_Previews: PreviewProvider {
+struct SidebarView_Previews: PreviewProvider {
     static var previews: some View {
-        ProducerView()
+        SidebarView()
     }
 }

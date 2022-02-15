@@ -13,7 +13,7 @@ struct onSetDesktopApp: App {
         WindowGroup {
             ContentView()
         }
-        .windowStyle(HiddenTitleBarWindowStyle())
+//        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
 
